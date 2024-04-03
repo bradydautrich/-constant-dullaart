@@ -1,3 +1,14 @@
+header{
+    position: fixed; 
+    justify-content: right; 
+    padding-left:418px; 
+}
+main section{
+    position: relative;
+    left: 500px;
+    top: 200px;
+}
+
 @media only screen and (max-width:600px){
     header{
         display: flex;
@@ -27,21 +38,21 @@
         flex-direction: column;
     }
     .pics{
+        padding: 0;
+        margin: 0;
         padding-top: 200px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
     }
-    div section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .pics a{
+        padding-top: 20px;
     }
     .jen{
         padding-right: 2px;
         filter: saturate(0%);
         object-fit: cover;
-        width: 200px;
+        width: 400px;
         height: 225px;
         overflow: hidden;
         transition: 1s;
@@ -51,7 +62,7 @@
         padding-left: 2px;
         padding-right: 2px;
         object-fit: cover;
-        width: 200px;
+        width: 400px;
         height: 225px;
         overflow: hidden;
         transition: 1s;
@@ -61,7 +72,7 @@
         padding-right: 2px;
         filter: saturate(0%);
         object-fit: cover;
-        width: 200px;
+        width: 400px;
         height: 225px;
         overflow: hidden;
         transition: 1s;

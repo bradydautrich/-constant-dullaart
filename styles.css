@@ -46,7 +46,7 @@ footer{
     height: 125px;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-end;
+    align-content: center;
     padding-left: 130px;
     justify-content:space-evenly;
     background-color:#a6a6a6;
