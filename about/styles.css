@@ -344,5 +344,11 @@ img{
         top: 300px;
         left: 0px;
     }
+    .navi{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content:space-around;
+    }
 
 }
