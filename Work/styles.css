@@ -61,6 +61,18 @@ main section{
     position: fixed;
     padding-right: 100px;
 }
+.revpicrotate img{
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate{
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 @media only screen and (min-width:600px) and (max-width:1000px){
     header{
         display: flex;
@@ -94,9 +106,9 @@ main section{
         display: flex;
         justify-content: flex-end;
         position: relative;
-        width: 100%;
+        width: 70%;
         height: 100%;
-        left: 0px;
+        left: 0200px;
         top: 0px;
         padding: 0px;
         margin: 0px;
@@ -132,7 +144,7 @@ main section{
         padding-right: 2px;
         filter: saturate(0%);
         object-fit: cover;
-        width: 200px;
+        width: 400px;
         height: 225px;
         overflow: hidden;
         transition: 1s;
@@ -234,16 +246,15 @@ main section{
         left: 200px;
     }
     .revtext{
+        z-index: 3;
         padding-top: 60px;
+        padding-bottom: 50px;
         width: 100%;
         left: 0px;
         top: 0px;
     }
     .revpic{
-        /* top: 60px; */
         width:400px;
-        object-fit:cover;
-        float: right;
         display: block;
         position: relative;
     }
@@ -298,9 +309,6 @@ main section{
     p{
         padding: 0;
         margin: 0;
-    }
-    section img{
-        display: none;
     }
 }
 @media only screen and (max-width:600px){
@@ -496,6 +504,11 @@ main section{
         left: 0px;
         top: 0px;
     }
+    .revmain{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
     .revtitle{
         display: flex;
         justify-items: center;
@@ -509,11 +522,12 @@ main section{
         height: 100px;
     }
     .revpic{
+        top: 200px;
         width: 400px;
-        position: fixed;
     }
     .revtext{
         padding-top: 600px;
+        padding-bottom: 100px;
         width: 100%;
         left: 0px;
         top: 0px;
