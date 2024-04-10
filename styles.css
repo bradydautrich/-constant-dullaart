@@ -167,7 +167,7 @@ main div {
     padding-right: 380px;
     font-size: 40px;
 }
-@media only screen and (max-width:1000px){
+@media only screen and (min-width:600px) and (max-width:1000px){
     header{
         display: flex;
         justify-items: flex-end;
@@ -414,7 +414,6 @@ main div {
         transform: scale(120%);
         transition: 1s;
     }
-
     footer{
         display: flex;
         justify-content: space-evenly;
